@@ -82,7 +82,7 @@
     font-weight: 700;
 }
 
-.planet-about { top:40px; left:50%; transform: translateX(-50%);}
+.planet-about { top:40px; left:50%;}
 .planet-projects { top:40%; left: -18px;}
 .planet-services { bottom:34px; left:30%;}
 .planet-contact { bottom:60px; right:16%;}
