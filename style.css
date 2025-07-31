@@ -1,0 +1,111 @@
+/* Navigation Bar */
+.nav-header {
+    width: 100%;
+    padding: 20px 0 8px 0;
+    background: rgba(15,23,40,0.65);
+    box-shadow: 0 4px 18px #212b30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.nav-header h1 {
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    color: #d0fefa;
+    margin: 0 0 2px 0;
+}
+.nav-header nav {
+    display: flex;
+    gap: 1.5em;
+}
+.nav-link {
+    color: #80ffd6;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 600;
+}
+.nav-link.active, .nav-link:hover {
+    background: #23a6d5;
+    color: #fff;
+}
+
+/* Galaxy homepage style */
+.galaxy-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 80vh;
+    padding-top: 3vh;
+}
+
+.galaxy-bg {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    margin: 0 auto 40px auto;
+    background: radial-gradient(circle at center, #294362 50%, #13202b 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-star {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+}
+
+.planet {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(145deg, #1be6fd 60%, #2e12d8 100%, #3a0248);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 38px #39eee9b2;
+    font-size: 18px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.planet a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.planet-about { top:40px; left:50%; transform: translateX(-50%);}
+.planet-projects { top:40%; left: -18px;}
+.planet-services { bottom:34px; left:30%;}
+.planet-contact { bottom:60px; right:16%;}
+.planet:hover {
+    transform: scale(1.06) rotate(-8deg);
+    box-shadow: 0 0 60px #e1aaff  ;
+}
+
+/* Planet Page style */
+.planet-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    padding-top: 4vh;
+}
+.planet-content {
+    background: rgba(33,34,78,0.8);
+    padding: 2em 2em;
+    max-width: 470px;
+    border-radius: 20px;
+    box-shadow: 0 0 34px #282b4a85;
+    margin-bottom: 2em;
+}
+
+/* The rest of your earlier style.css for input, form, shooting stars, .astro-guide, etc. is unchanged! */

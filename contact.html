@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Space Station | Cosmic Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="space-bg">
+    <header class="nav-header">
+        <h1>🛰️ Space Station: Contact</h1>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="station-container">
+            <form id="userForm" class="cosmic-form">
+                <h1>
+                    <span class="astro-emoji">👨‍🚀</span>
+                    Contact the Space Station
+                </h1>
+                <p class="why-contact">
+                    Lost in the cosmic void? Need galactic guidance, have feedback, found an anomaly, or want to join our crew? Reach out and the Astro Crew will beam you up!
+                </p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Transmit Message</button>
+                <div id="formStatus"></div>
+            </form>
+            <div class="astro-guide">
+                <img src="astronaut.png" alt="Astro Guide" class="astronaut-character">
+                <div class="speech-bubble">
+                    I'm your guide! Use this portal to contact mission control!
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
